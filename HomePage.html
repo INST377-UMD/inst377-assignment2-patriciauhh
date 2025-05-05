@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> INST377: Assignment 2 </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src='assignment2.js' defer></script>
+</head>
+
+    <body class="body">
+
+        <!-- Header Section -->
+        <header id="bar"> 
+        <h1> ⋆˚✿˖° INST377: Activities ⋆˚✿˖°</h1>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="HomePage.html" >Home</a></li>
+                <li><a href="StockPage.html" >Stocks</a></li>
+                <li><a href="DogPage.html" >Dogs</a></li>
+            </ul>
+        </nav>
+
+        <h2>These are some different activities we can try! </h2>
+
+
+        <div class="flex-parent jc-center">
+            <button class="button-49 margin-right" role="StockButton" onclick="window.location='StockPage.html';">Stocks</button>
+            <button class="button-49" role="DogButton" onclick="window.location='DogPage.html';">Dogs</button>
+        </div>
+
+        <div id="quote"> 
+            <h1>Quote of the Page Load</h1> 
+            <h2 id="quoteoutput"> </h2>
+            <h2 id="author"> </h2>
+        </div>
+
+        <div id="audio">
+            <h1>In this webpage, there are options to Navigate using audio!</h1> 
+            <p>Ensure your mic is enabled to be able to use this feature. </p>
+            <ul>
+                <li>Navigate to a Different Page</li>
+                    <ul> Say: <strong> Navigate to &lt;page&gt; </strong> </ul>
+                <li>Change the Page Color</li>
+                    <ul> Say: <strong> Change the color to &lt;color&gt; </strong> </ul>
+              <li>Say Hello Back to you!</li>
+                    <ul> Say: <strong> Hello </strong> </ul>
+            </ul>
+           
+            <button class="button1" id="start-mic">Turn On Listening </button>
+            <button class="button1" id="stop-mic">Turn Off Listening </button>
+        </div>
+
+</body>
+</html>

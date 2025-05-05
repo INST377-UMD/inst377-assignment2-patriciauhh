@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> INST377: Assignment 2 </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='stockpage.js' defer></script>
+</head>
+
+    <body class="body">
+
+        <!-- Header Section -->
+        <header id="bar"> 
+        <h1> ⋆˚✿˖° INST377: Stocks ⋆˚✿˖°</h1>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="HomePage.html" >Home</a></li>
+                <li><a href="StockPage.html" >Stocks</a></li>
+                <li><a href="DogPage.html" >Dogs</a></li>
+            </ul>
+        </nav>
+
+        <div class="StockLookUp"> 
+            <h1>Let's chart some stocks! </h1>
+            <input> 
+            <select name="days" id="stockdays">
+                <option value="30days">30 Days</option>
+                <option value="60days">60 Days</option>
+                <option value="90days">90 Days</option>
+              </select>
+            <input type="submit" value="Look Up!" id="lookupbutn" />
+        </div>
+
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+
+
+        <table id="reddittable" style="width:70%">
+            <tr>
+                <th>Ticker</th>
+                <th>Comment Count</th>
+                <th>Sentiment</th>
+            </tr>
+        </table>
+ 
+        <div id="audio">
+            <h1>In this webpage, there are options to Navigate using audio!</h1> 
+            <p>Ensure your mic is enabled to be able to use this feature. </p>
+            <ul>
+                <li>Navigate to a Different Page</li>
+                    <ul> Say: <strong> Navigate to &lt;page&gt; </strong> </ul>
+                <li>Change the Page Color</li>
+                    <ul> Say: <strong> Change the color to &lt;color&gt; </strong> </ul>
+                <li>Say Hello Back to you!</li>
+                    <ul> Say: <strong> Hello </strong> </ul>
+                <li>Look up stock</li>
+                    <ul> Say: <strong> Lookup &lt;stock&gt; </strong> </ul>
+            </ul>
+            
+            <button class="button1" id="start-mic">Turn On Listening </button>
+            <button class="button1" id="stop-mic">Turn Off Listening </button>
+        </div>
+
+</body>
+</html>
