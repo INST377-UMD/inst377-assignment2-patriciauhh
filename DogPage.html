@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> INST377: Assignment 2 </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Bqiao/SimpleSlider@master/simpleSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src='assignment2.js' defer></script>
+</head>
+
+    <body class="body">
+
+        <!-- Header Section -->
+        <header id="bar"> 
+        <h1> ⋆˚✿˖° INST377: Dogs ⋆˚✿˖°</h1>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="HomePage.html" >Home</a></li>
+                <li><a href="StockPage.html" >Stocks</a></li>
+                <li><a href="DogPage.html" >Dogs</a></li>
+            </ul>
+        </nav> 
+
+        <h1> Doggos! 🐶</h1>
+
+        <div id="carousel" class="slider-container"></div>
+
+        <h2>Dog Breeds</h2>
+        <div id="breed-buttons"></div>
+
+      
+        <div id="breed-info" class="hidden">
+          <h3 id="breed-name"></h3>
+          <p id="breed-desc"></p>
+          <p><strong>Min Life Span:</strong> <span id="min-life"></span> years</p>
+          <p><strong>Max Life Span:</strong> <span id="max-life"></span> years</p>
+          <img id="breed-image" src="" alt="" style="max-width: 300px; margin-top: 10px;" />
+        </div>
+
+
+        <div id="audio">
+            <h1>In this webpage, there are options to Navigate using audio!</h1> 
+            <p>Ensure your mic is enabled to be able to use this feature. </p>
+            <ul>
+                <li>Navigate to a Different Page</li>
+                    <ul> Say: <strong> Navigate to &lt;page&gt; </strong> </ul>
+                <li>Change the Page Color</li>
+                    <ul> Say: <strong> Change the color to &lt;color&gt; </strong> </ul>
+              <li>Say Hello Back to you!</li>
+                    <ul> Say: <strong> Hello </strong> </ul>
+              <li>Load Dog Breed</li>
+                    <ul> Say: <strong> Load &lt;dog breed name&gt; </strong> </ul>
+            </ul>
+
+            <button class="button1" id="start-mic">Turn On Listening </button>
+            <button class="button1" id="stop-mic">Turn Off Listening </button>
+        </div>
+
+</body>
+</html>
